@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - OpenShelf Library</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <h2>Welcome Back</h2>
+    <p class="sub-text">Login to continue your reading journey.</p>
+
+    <form action="../php/auth/login_process.php" method="POST" autocomplete="off">
+
+        <div class="input-group">
+            <label>Username or Email</label>
+            <input type="text" name="username" placeholder="Enter your username or email" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');">
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter your password" autocomplete="new-password" onfocus="this.removeAttribute('readonly');">
+        </div>
+
+        <div class="forgot-box">
+            <a href="forgot_password.html" class="forgot-link">Forgot Password?</a>
+        </div>
+
+        <button type="submit" name="login" class="btn-purple">Log In</button>
+
+        <p class="form-text">
+            Don't have an account?
+            <a href="register.html">Create an account</a>
+        </p>
+
+    </form>
+
+</div>
+
+<script>
+window.onload = function() {
+    document.querySelector("input[name='username']").value = "";
+    document.querySelector("input[name='password']").value = "";
+};
+</script>
+
+</body>
+</html>

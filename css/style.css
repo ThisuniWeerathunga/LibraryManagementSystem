@@ -1,0 +1,565 @@
+
+
+
+
+/* admin-dashboard */
+body{
+margin:0;
+font-family:Arial;
+background:#f2f2f2;
+}
+
+.container{
+display:flex;
+}
+
+.sidebar{
+width: 260px;
+background: #1e293b;
+color:white;
+height:100vh;
+padding:20px;
+}
+
+.sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.sidebar ul li{
+padding:15px;
+cursor:pointer;
+}
+
+.sidebar ul li:hover{
+background: #1e293b;
+}
+
+.logo{
+margin-bottom:30px;
+}
+
+.logout{
+position:absolute;
+bottom:20px;
+color:white;
+text-decoration:none;
+}
+
+.main{
+margin-left: 300px;
+padding: 20px;
+width:calc(100% - 300px)
+}
+
+.topbar{
+background:white;
+padding:15px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.stats{
+display:flex;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+width:180px;
+text-align:center;
+}
+
+.chart{
+background:white;
+margin-top:30px;
+padding:20px;
+border-radius:10px;
+width:400px;
+}
+
+/* catalog Page */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* PAGE LAYOUT */
+
+.container{
+display:flex;
+
+
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:260px;
+background: #1e293b;
+color:white;
+display:flex;
+flex-direction:column;
+position:fixed;
+height:100%;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+padding:20px;
+text-align:center;
+}
+
+.sidebar ul{
+list-style:none;
+margin-top:20px;
+}
+
+.sidebar ul li{
+padding:15px 25px;
+}
+
+.sidebar ul li a{
+color:white;
+text-decoration:none;
+display:block;
+}
+
+.sidebar ul li:hover{
+background: #1e293b;
+}
+
+.active{
+background:#334155;
+}
+
+.logout{
+margin-top:auto;
+padding:20px;
+}
+
+/* MAIN AREA */
+
+.main{
+margin-left: 300px;
+padding: 20px;
+width:calc(100% - 300px)
+}
+
+/* TOP BAR */
+
+.topbar{
+background:white;
+padding:15px 20px;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+/* TABLE BOX */
+
+.table-box{
+background:#eee;
+padding:20px;
+border-radius:10px;
+}
+
+/* BUTTON AREA */
+
+.catalog-top{
+display:flex;
+gap:10px;
+margin-bottom:15px;
+align-items:center;
+}
+
+
+.add-btn:hover{
+background:rgba(0,0,0,0.6);
+}
+
+/* SEARCH */
+
+.search{
+padding:8px;
+border-radius:6px;
+border:1px solid #ccc;
+margin-left:auto;
+}
+
+/* TABLE */
+
+.table{
+width:100%;
+border-collapse:collapse;
+background:white;
+border-radius:10px;
+overflow:hidden;
+}
+
+table th{
+background:#ddd;
+padding:12px;
+text-align:left;
+}
+
+table td{
+padding:10px;
+border-bottom:1px solid #eee;
+}
+
+/* ACTION BUTTON */
+
+td button{
+border:none;
+background:none;
+cursor:pointer;
+font-size:16px;
+}
+
+/* POPUP */
+
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#334155;
+display:none;
+justify-content:center;
+align-items:center;
+}
+
+.popup-content{
+background:white;
+padding:25px;
+border-radius:10px;
+width:300px;
+}
+
+.popup-content input{
+width:100%;
+padding:8px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.popup-content button{
+padding:8px 12px;
+margin-top:10px;
+border:none;
+background:#334155;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* Book Page*/
+
+/* Book-popup pages*/
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#334155;
+justify-content:center;
+align-items:center;
+}
+
+.popup-content{
+background:white;
+padding:20px;
+border-radius:10px;
+width:300px;
+}
+
+/* user Page */
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#334155;
+justify-content:center;
+align-items:center;
+}
+
+.popup-box{
+background:white;
+padding:30px;
+border-radius:10px;
+width:350px;
+}
+
+.popup-box input{
+width:100%;
+margin:8px 0;
+padding:8px;
+}
+
+.popup-buttons{
+display:flex;
+justify-content:space-between;
+margin-top:10px;
+}
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#334155;
+justify-content:center;
+align-items:center;
+}
+
+.popup-card{
+background:#fff;
+width:420px;
+padding:25px;
+border-radius:10px;
+}
+
+.popup-header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.popup-icon{
+background:#eee;
+padding:10px;
+border-radius:8px;
+margin-right:10px;
+}
+
+.close{
+cursor:pointer;
+font-size:14px;
+}
+
+.popup-card input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.row{
+display:flex;
+gap:10px;
+}
+
+.popup-buttons{
+display:flex;
+justify-content:space-between;
+margin-top:15px;
+}
+
+.btn-cancel{
+background:#ddd;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+cursor:pointer;
+}
+
+
+
+.full{
+width:100%;
+margin-top:20px;
+}
+
+.delete-text{
+text-align:center;
+margin:20px 0;
+}
+
+/* log out popup */
+/* ===== LOGOUT MODAL ===== */
+
+.modal {
+    display: none; /* hidden first */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: #334155;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.modal.show {
+    display: flex; /* show when active */
+}
+
+.modal-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+/* buttons */
+
+
+.btn-no {
+    background: #ccc;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+/* Hover like menu */
+
+/* user dashboard */
+
+
+
+
+
+
+/* POPUP FIX */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-card {
+  background: #fff;
+  padding: 20px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+
+}
+
+.delete-btn {
+color: #334155;
+  border: none;
+  padding: 8px 15px;
+}
+
+
+/* ===== GLOBAL BUTTON STYLE ===== */
+
+button,
+.btn,
+.add-btn,
+.btn-primary,
+.btn-yes {
+  background: #334155;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+/* ACTION BUTTONS FIX */
+td button {
+  background: #334155;   /* dark color */
+  color: #fff;           /* white text */
+  border: none;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  opacity: 1;            /* FIX faded issue */
+  transition: 0.3s ease;
+}
+
+/* Hover */
+td button:hover {
+  background: #1e293b;
+}
+
+/* Hover */
+button:hover,
+.btn:hover,
+.add-btn:hover,
+.btn-primary:hover,
+.btn-yes:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+}
+
+/* Secondary button (cancel) */
+.btn-no,
+.btn-cancel {
+  background: #e2e8f0;
+  color: #111;
+}
+
+.btn-no:hover,
+.btn-cancel:hover {
+  background: #cbd5e1;
+}
+
+/* Danger button (delete) */
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+button {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button:active {
+  transform: scale(0.96);
+}
