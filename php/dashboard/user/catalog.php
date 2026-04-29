@@ -65,7 +65,7 @@ Overdue Books
 <tr>
 <th>ID</th>
 <th>Book ID</th>
-<th>Amount</th>
+<th>Copies</th>
 <th>Borrow Date</th>
 <th>Due Date</th>
 </tr>
@@ -74,7 +74,7 @@ Overdue Books
 <tr>
 <td><?php echo $row['id']; ?></td>
 <td><?php echo $row['book_id']; ?></td>
-<td><?php echo $row['amount']; ?></td>
+<td><?php echo $row['copies']; ?></td>
 <td><?php echo $row['borrow_date']; ?></td>
 <td style="<?php echo ($type=='overdue') ? 'color:red;' : ''; ?>">
 <?php echo $row['due_date']; ?>
